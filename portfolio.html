@@ -1,0 +1,402 @@
+<!DOCTYPE html><html class="scroll-smooth dark" lang="fr" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Alex Morel — Mécanicien automobile &amp; vente de véhicules</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-fixed-variant": "#454747",
+                "primary-fixed-dim": "#c6c6c7",
+                "surface-variant": "#353535",
+                "on-primary": "#2f3131",
+                "tertiary-fixed": "#e5e2e1",
+                "surface-container-low": "#1b1b1b",
+                "on-surface": "#e2e2e2",
+                "secondary-fixed-dim": "#c6c6c6",
+                "primary-fixed": "#e2e2e2",
+                "surface-container-high": "#1A1A1A",
+                "on-error": "#690005",
+                "background": "#131313",
+                "secondary-fixed": "#e2e2e2",
+                "accent-beige": "#DADADA",
+                "inverse-on-surface": "#303030",
+                "on-background": "#e2e2e2",
+                "text-secondary": "#ADADAD",
+                "on-tertiary-fixed-variant": "#474746",
+                "surface-container": "#1f1f1f",
+                "surface-container-lowest": "#0e0e0e",
+                "tertiary-fixed-dim": "#c8c6c5",
+                "surface": "#131313",
+                "on-surface-variant": "#c4c7c8",
+                "on-secondary-container": "#b5b5b5",
+                "primary-container": "#e2e2e2",
+                "surface-dim": "#131313",
+                "error": "#ffb4ab",
+                "inverse-primary": "#5d5f5f",
+                "surface-bright": "#393939",
+                "on-primary-container": "#636565",
+                "outline-variant": "#444748",
+                "inverse-surface": "#e2e2e2",
+                "surface-tint": "#c6c6c7",
+                "secondary": "#c6c6c6",
+                "tertiary": "#ffffff",
+                "on-error-container": "#ffdad6",
+                "on-tertiary-container": "#656464",
+                "outline": "#8e9192",
+                "primary": "#ffffff",
+                "text-primary": "#F9F9F9",
+                "tertiary-container": "#e5e2e1",
+                "on-primary-fixed": "#1a1c1c",
+                "on-tertiary-fixed": "#1c1b1b",
+                "secondary-container": "#454747",
+                "on-secondary-fixed": "#1a1c1c",
+                "on-primary-fixed-variant": "#454747",
+                "error-container": "#93000a",
+                "surface-container-highest": "#353535",
+                "on-secondary": "#2f3131",
+                "on-tertiary": "#313030"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "container-max": "1440px",
+                "margin-desktop": "80px",
+                "section-gap-desktop": "120px",
+                "margin-mobile": "24px",
+                "section-gap-mobile": "64px",
+                "gutter": "32px"
+        },
+        "fontFamily": {
+                "body-md": [
+                        "Inter"
+                ],
+                "headline-md": [
+                        "Hanken Grotesk"
+                ],
+                "body-lg": [
+                        "Inter"
+                ],
+                "display-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg": [
+                        "Hanken Grotesk"
+                ],
+                "headline-lg-mobile": [
+                        "Hanken Grotesk"
+                ],
+                "label-sm": [
+                        "Hanken Grotesk"
+                ]
+        },
+        "fontSize": {
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "72px",
+                        {
+                                "lineHeight": "80px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "letterSpacing": "-0.01em",
+                                "fontWeight": "500"
+                        }
+                ],
+                "label-sm": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>
+  a:focus-visible, button:focus-visible { outline: 2px solid #e2e2e2; outline-offset: 3px; border-radius: 6px; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; animation: none !important; }
+  }
+  .btn-whatsapp {
+    background: #25D366;
+    color: var(--white);
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;}
+    .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.75rem;
+    border-radius:50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:0.5 all ease;
+    border: none;
+    font-size: 1rem;
+    gap: 0.5rem;
+}
+</style>
+</head>
+<body class="bg-[#131313] text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-[#131313]/80 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md font-bold tracking-tighter text-primary" href="#">Mathieu <span style="color:orange">.</span></a>
+<div class="hidden md:flex space-x-8">
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-300" href="#a-propos">À propos</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-300" href="#services">Services</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-300" href="#methode">Méthode</a>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Ouvrir le menu" class="md:hidden text-primary" id="menu-btn">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<!-- Menu mobile -->
+<div class="hidden md:hidden border-t border-outline-variant/30 bg-[#131313]/95 backdrop-blur-md px-margin-mobile py-6 flex-col space-y-5" id="mobile-menu">
+<a class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#a-propos">À propos</a>
+<a class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#services">Services</a>
+<a class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#methode">Méthode</a>
+<a class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary hover:text-primary transition-colors" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="pt-[104px] pb-section-gap-mobile md:pb-section-gap-desktop">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap-mobile md:mb-section-gap-desktop">
+<div class="relative w-full rounded-[32px] overflow-hidden mb-8 bg-surface-container bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-variant/50 via-surface-container to-surface-container">
+<div class="grid grid-cols-1 md:grid-cols-2 p-6 md:p-12 min-h-[60vh] items-center relative z-10">
+<div class="flex flex-col justify-center">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-4">Mathieu — Mécanicien automobile</p>
+<h2 class="font-display-medium text-[40px] leading-[1.15] tracking-[-0.02em] font-semibold md:text-display-medium text-white mb-4 max-w-3xl">Je suis Mathieu <span style="color:orange">Kpodedanzon</span> <br>Mecanicien automibile</h2>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl mb-0">Depuis 12 ans, je répare et j'entretiens tous types de véhicules. Je sélectionne aussi des voitures d'occasion fiables, remises en état dans mon atelier avant d'être proposées à la vente.</p>
+<div class="flex flex-wrap gap-4 mt-8">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-wide hover:opacity-90 transition-opacity" href="#vehicules">Voir les véhicules</a>
+<a class="border border-primary text-primary px-8 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-wide hover:bg-surface-variant transition-colors" href="#contact">Prendre rendez-vous</a>
+</div>
+</div>
+<div class="flex justify-center items-center h-full mt-8 md:mt-0">
+<!-- Photo d'illustration (Unsplash, libre de droits) : remplacez le src par votre propre photo -->
+<img alt="Mécanicien travaillant sur un moteur dans son atelier" class="w-full max-w-md aspect-square object-cover rounded-[24px] border border-outline-variant/30 drop-shadow-[0_25px_50px_rgba(0,0,0,0.6)]" src="WhatsApp Image 2026-08-30 at 08.38.10.jpeg">
+</div>
+</div>
+</div>
+</section>
+<!-- À propos -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap-mobile md:mb-section-gap-desktop scroll-mt-28" id="a-propos">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter md:gap-24 p-8 md:p-12 bg-surface-container rounded-[32px]">
+<div class="flex flex-col justify-center">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg mb-6 text-primary">À propos de moi</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-12">Mécanicien de métier, je répare et j'entretiens tous types de véhicules dans mon atelier. Au fil des années, j'ai développé une seconde activité : dénicher, remettre en état et vendre des voitures d'occasion fiables. Mon principe est simple — je ne vends que des véhicules que je serais prêt à conduire moi-même.</p>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-4">Toutes marques, notamment</p>
+<div class="flex items-center space-x-8 opacity-50 grayscale">
+<span class="font-headline-md font-bold">TOYOTA</span>
+<span class="font-headline-md font-bold">PEUGEOT</span>
+<span class="font-headline-md font-bold">MERCEDES</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 md:gap-12">
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-2">12+</div>
+<div class="font-body-md text-body-md text-secondary">Années d'expérience</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-2">800+</div>
+<div class="font-body-md text-body-md text-secondary">Véhicules réparés</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-2">150+</div>
+<div class="font-body-md text-body-md text-secondary">Voitures vendues</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary mb-2">98%</div>
+<div class="font-body-md text-body-md text-secondary">Clients satisfaits</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap-mobile md:mb-section-gap-desktop scroll-mt-28" id="services">
+  <div class="bg-surface-container rounded-[32px] p-8 md:p-12">
+    <h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-10">Mes Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Service 1 -->
+      <div class="p-6 border border-outline-variant/30 rounded-xl hover:bg-surface-variant transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">car_repair</span>
+          <h3 class="font-headline-md text-primary">Réparation mécanique</h3>
+        </div>
+        <p class="font-body-md text-secondary">Moteur, freinage, embrayage, suspension : un diagnostic précis et des réparations durables.</p>
+      </div>
+      <!-- Service 2 -->
+      <div class="p-6 border border-outline-variant/30 rounded-xl hover:bg-surface-variant transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">build</span>
+          <h3 class="font-headline-md text-primary">Entretien &amp; révision</h3>
+        </div>
+        <p class="font-body-md text-secondary">Vidange, filtres, pneus, climatisation : un suivi régulier pour prolonger la vie de votre voiture.</p>
+      </div>
+      <!-- Service 3 -->
+      <div class="p-6 border border-outline-variant/30 rounded-xl hover:bg-surface-variant transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">sell</span>
+          <h3 class="font-headline-md text-primary">Vente de véhicules</h3>
+        </div>
+        <p class="font-body-md text-secondary">Des occasions fiables, inspectées et remises en état dans mon atelier avant la vente.</p>
+      </div>
+      <!-- Service 4 -->
+      <div class="p-6 border border-outline-variant/30 rounded-xl hover:bg-surface-variant transition-colors duration-300">
+        <div class="flex items-center gap-3 mb-4">
+          <span class="material-symbols-outlined text-primary">verified</span>
+          <h3 class="font-headline-md text-primary">Garantie &amp; suivi</h3>
+        </div>
+        <p class="font-body-md text-secondary">Un accompagnement après chaque réparation ou achat, pour rouler l'esprit tranquille.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Méthode -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap-mobile md:mb-section-gap-desktop scroll-mt-28" id="methode">
+<div class="flex justify-between items-end mb-10">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Ma méthode de travail</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Étape 1 -->
+<div class="group bg-surface-container rounded-[32px] p-4 transition-colors hover:bg-surface-variant">
+<div class="relative aspect-[4/5] rounded-[24px] overflow-hidden mb-6">
+<img alt="Mécanicien inspectant le moteur d'une voiture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f?q=80&amp;w=800&amp;h=1000&amp;fit=crop&amp;auto=format">
+<div class="absolute top-4 left-4 font-headline-md text-white mix-blend-difference">01</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Diagnostic</h3>
+<p class="font-body-md text-body-md text-secondary">J'identifie la panne avec précision avant toute intervention.</p>
+</div>
+<!-- Étape 2 -->
+<div class="group bg-surface-container rounded-[32px] p-4 transition-colors hover:bg-surface-variant">
+<div class="relative aspect-[4/5] rounded-[24px] overflow-hidden mb-6">
+<img alt="Mécanicien présentant un véhicule, coffre ouvert" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://images.unsplash.com/photo-1504222490345-c075b6008014?q=80&amp;w=800&amp;h=1000&amp;fit=crop&amp;auto=format">
+<div class="absolute top-4 left-4 font-headline-md text-white mix-blend-difference">02</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Devis transparent</h3>
+<p class="font-body-md text-body-md text-secondary">Un chiffrage clair, validé ensemble : aucune surprise sur la facture.</p>
+</div>
+<!-- Étape 3 -->
+<div class="group bg-surface-container rounded-[32px] p-4 transition-colors hover:bg-surface-variant">
+<div class="relative aspect-[4/5] rounded-[24px] overflow-hidden mb-6">
+<img alt="Mains d'un mécanicien serrant une pièce moteur à la clé" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&amp;w=800&amp;h=1000&amp;fit=crop&amp;auto=format">
+<div class="absolute top-4 left-4 font-headline-md text-white mix-blend-difference">03</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Réparation</h3>
+<p class="font-body-md text-body-md text-secondary">Pièces de qualité et travail soigné, dans les délais annoncés.</p>
+</div>
+<!-- Étape 4 -->
+<div class="group bg-surface-container rounded-[32px] p-4 transition-colors hover:bg-surface-variant">
+<div class="relative aspect-[4/5] rounded-[24px] overflow-hidden mb-6">
+<img alt="Remise des clés du véhicule au client" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" src="https://images.unsplash.com/photo-1727893512947-8bdc773ceb02?q=80&amp;w=800&amp;h=1000&amp;fit=crop&amp;auto=format">
+<div class="absolute top-4 left-4 font-headline-md text-white mix-blend-difference">04</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-2">Restitution &amp; garantie</h3>
+<p class="font-body-md text-body-md text-secondary">Vous repartez avec un véhicule contrôlé, testé et garanti.</p>
+</div>
+</div>
+</section>
+<!-- Contact -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto scroll-mt-28" id="contact">
+<div class="bg-surface-container rounded-[32px] p-8 md:p-16 text-center flex flex-col items-center">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary mb-4">Contact</p>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6 max-w-2xl">Une panne ? Une voiture à acheter ? Parlons-en.</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-10 max-w-xl">Passez à l'atelier ou contactez-moi directement : diagnostic et devis gratuits, réponse rapide et sans engagement.</p>
+<div class="flex flex-wrap justify-center gap-4"><a href="https://wa.me/22991188673" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+                WhatsApp
+            </a>
+
+<a class="border border-primary text-primary px-8 py-4 rounded-full font-label-sm text-label-sm uppercase tracking-wide hover:bg-surface-variant transition-colors inline-flex items-center gap-2" href="tel: +2290191188673">
+<span aria-hidden="true" class="material-symbols-outlined">call</span>+229 01 91 18 86 73
+</a>
+</div>
+<p class="font-body-md text-body-md text-secondary mt-8">Atelier ouvert du lundi au samedi, 8 h – 18 h.</p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container w-full py-section-gap-desktop border-t border-outline-variant/30 mt-section-gap-mobile md:mt-section-gap-desktop">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<div class="font-headline-md text-headline-md font-bold text-primary mb-4">Mathieu</div>
+<p class="font-body-md text-body-md text-secondary">© 2026 Mathieu — Mécanicien automobile. Tous droits réservés.</p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-col md:flex-row gap-8 justify-end">
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#" rel="noopener" target="_blank">Facebook</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="#" rel="noopener" target="_blank">WhatsApp</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="tel:+2290191188673">Téléphone</a>
+<a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="mailto:contact@garage-morel.fr">E-mail</a>
+</div>
+</div>
+</footer>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    mobileMenu.classList.toggle('flex', open);
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    menuBtn.querySelector('span').textContent = open ? 'close' : 'menu';
+  });
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+      menuBtn.setAttribute('aria-expanded', 'false');
+      menuBtn.querySelector('span').textContent = 'menu';
+    });
+  });
+</script>
+</body></html>
